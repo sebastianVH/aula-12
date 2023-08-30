@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer pagina web</title>
+</head>
+<b>
+    <!-- Esto es un comentario que no va a figurar en HTML  -->
+    <!-- Etiquetas/Tags: indican el contenido a mostrar -->
+    <!-- Div: es la etiqueta contenedora DEFAULT para su uso -->
+    <div>
+        <!-- Titulos: la sintaxis correponde a una h , seguida de un numero. H1 a H6 -->
+        <h1>Hola mundo</h1>
+        <h6>Hola mundo</h6>
+        <!-- Parrafo: para parrafo, por default, utilizamos la p -->
+        <p>Esto es un parrafo en HTML</p>
+        <small>Esto es un parrafo mas pequeño en HTML</small>
+        <br>
+        <!-- span: es una etiqueta VACIA: no tiene estilos -->
+        <span>Hola mundo span</span>
+    </div>
+    <!--a: etiqueta que genera un seguimiento a un ENLACE (locales o globales) -->
+    <!-- Uitliza el atributo href="" , donde dentro de las comillas, ponemos el link al cual va a redireccionar -->
+    <hr>
+    <h2>Etiqueta a</h2>
+    <a href="https://messi.com/" target="_blank">Pagina Oficial de Lionel Messi</a>
+    <a href="https://www.quackit.com" target="_blank">Referencia para usar etiquetas en Quackit</a>
+    <!--Referencia a un archivo en nuestro proyecto-->
+    <a href="contacto.html">Contactanos</a>
+    <br>
+    <hr>
+    <h2>Etiqueta iframe</h2>
+    <!--iframe: permite renderizar un html dentro de un marco-->
+    <iframe src="http://www.messi.com" width="100px" height="300px" allowfullscreen ></iframe>
+
+    <iframe width="500px" height="100px" src="https://www.youtube.com/embed/BeK7XZMm-4Q?si=L_etmd2kN8j3OIkY&amp;start=3000" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!--img: nos permite renderizar una IMAGEN dentro del html.  NO POSEE ETIQUETA CIERRE-->
+    <hr>
+    <h2>Etiqueta img</h2>
+    <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2018/08/pikachu_4.jpg?tf=3840x" width="100px" alt="pikachu-dibujo">
+
+    <img src="img/pngwing.com.png" alt="" width="100px">
+    <hr>
+    <h2>Etiqueta button</h2>
+    <!--button: es un boton que ejecutara alguna accion-->
+    <!--onclick: nos permite ejecutar una funcion JavaScript que tengamos creada-->
+    <button type="button" onclick="saludar()">Haceme un click!!</button>
+    <hr>
+    <h2>Etiqueta input</h2>
+    <!--permite campos de ingreso de datos o comportamientos. No posee cierre-->
+    <input type="button" value="Haceme click"><br>
+    <input type="checkbox" name="" id="" value="1"><label for="">He leido los terminos y condiciones</label><br>
+    <input type="checkbox" name="" id="" value="2"><label>Acepto recibir notificaciones por mail</label><br>
+    <h3>Formulario de inscripcion</h3>
+    <label for="nombre">Username</label>
+    <input type="text" name="" id="nombre" placeholder="Nombre sin simbolos"><br>
+    <label for="password">Password</label>
+    <input type="password" name="" id="" placeholder="Minimo 10 caracteres"><br>
+    <label for="fecha">Fecha nacimiento</label>
+    <input type="date" name="" id="fecha"><br>
+    <label for="email">email</label>
+    <input type="email" name="" id="email"><br>
+    <label for="foto">Foto Perfil</label>
+    <input type="file" name="" id="foto"><br>
+    <label for="numerico">rango salarial</label>
+    <input type="number" name="" id="numerico"><br>
+    <label for="">Genero</label>
+    <select name="" id="">
+        <option value="" selected>**Seleccione una opcion**</option>
+        <option value="M">Masculino</option>
+        <option value="F">Femenino</option>
+        <option value="O">Otros</option>
+    </select><br>
+    <label for="">Indique Rango de precio</label>
+    <input type="range" name="" id=""><br>
+    <label for="">Busqueda</label>
+    <input type="search" name="" id="">
+    <input type="url" name="" id="">
+</body>
+</html>
+
