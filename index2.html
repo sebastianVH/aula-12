@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras y semantica</title>
+</head>
+<body>
+    <h1>Estructuras en HTML</h1>
+    <h2>Formulario de ingreso de usuario</h2>
+    <!-- -Siempre incluir dentro del Form las etiquetas (tags) que vayamos a utilizar
+        - Recordar que siempre necesitaremos un boton que complete la accion
+        - IMPORTANTE: COLOCAR SIEMPRE UN ID A CADA UNO DE MIS INPUT
+    -->
+    <form action="" method="post">
+        <label for="name">Name:</label> <input id="name" name="data" type="text"><br>
+        <label for="username">Username:</label> <input id="username" name="data" type="text"><br>
+        <label for="password">Password: </label> <input id="password" name="data" type="password" name="" id=""><br>
+        <label for="comments">Comment:</label> <textarea name="" id="comment" cols="15" rows="5"></textarea>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+    <hr>
+    <h2>Tabla de datos</h2>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Sector</th>
+        </thead>
+        <tbody id="bodyTable">
+            <!-- tr: representa la creacion de una FILA (table row) -->
+            <tr>
+                <!-- td: representa un dato DENTRO de la fila en la tabla -->
+                <td>1</td>
+                <td>Seba</td>
+                <td>Ventas</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Marina</td>
+                <td>Ventas</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Sector</th>
+        </tfoot>
+    </table>
+    <hr>
+    <h2>Semantica</h2>
+    <!-- Semantica es estructurar contenidos a traves de una etiqueta que corresponda al tipo de contenido que vamos a almacenar -->
+</body>
+</html>
