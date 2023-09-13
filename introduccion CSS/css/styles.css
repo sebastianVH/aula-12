@@ -1,0 +1,48 @@
+/* escribimos el comentario */
+
+/* 
+Manera de identificar elementos y brindarles estilos:
+
+*a traves del uso del TAG correspondiente
+*a traves de un ID que identifique al UNICO elemento
+*a traves de la CLASS que identifica un GRUPO de elementos
+
+*/
+*{
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(68, 252, 6);
+}
+
+/* Estilos a traves de ETIQUETAS: */
+#h3Distinto{
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+h3 {
+ /* font nos permite manejar los estilos de FUENTES*/
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: 100%;
+}
+
+
+/* Estilos a traves de ID: vamos a utilizar el # junto con el nombre identificatorio del elemento ID*/
+
+#textoHeader{
+    /* para los estilos de texto, usaremos la sintaxis de text. El caso excepcional es COLOR*/
+    color: aqua;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0) ; /* los 2 primeros, manejan el eje X e Y de nuestra sombra. El tercer parametro maneja lo que es el blur (distorsion). El ultimo, es el color en si*/
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/* Estilo a traves de clases: vamos a utilizar un punto, seguido del nombre de la clase que identifica al elemento*/
+
+.divHeader{
+    /*interactuar con el fondo, utilizaremos la sintaxis de background:*/
+    background-color: rgb(255, 0, 0);
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
