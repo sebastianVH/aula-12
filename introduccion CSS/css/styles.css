@@ -14,18 +14,19 @@ Manera de identificar elementos y brindarles estilos:
 }
 
 /* Estilos a traves de ETIQUETAS: */
-#h3Distinto{
-    font-family: 'Times New Roman', Times, serif;  
-}
 
 h3 {
- /* font nos permite manejar los estilos de FUENTES*/
- font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- font-size: 100%;
+    /* font nos permite manejar los estilos de FUENTES*/
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100%;
 }
 
 
 /* Estilos a traves de ID: vamos a utilizar el # junto con el nombre identificatorio del elemento ID*/
+
+#h3Distinto{
+    font-family: 'Times New Roman', Times, serif;  
+}
 
 #textoHeader{
     /* para los estilos de texto, usaremos la sintaxis de text. El caso excepcional es COLOR*/
@@ -34,11 +35,12 @@ h3 {
     text-align: center;
 }
 
+
+/* Estilo a traves de clases: vamos a utilizar un punto, seguido del nombre de la clase que identifica al elemento*/
+
 .link{
     text-decoration: none;
 }
-
-/* Estilo a traves de clases: vamos a utilizar un punto, seguido del nombre de la clase que identifica al elemento*/
 
 .divHeader{
     /*interactuar con el fondo, utilizaremos la sintaxis de background:*/

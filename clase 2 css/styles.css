@@ -1,0 +1,79 @@
+div {
+    background-color: aqua;
+}
+
+/* p {
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+/* Relacion en cascada: vamos designando cual sera el elemento que tendra el estilo, segun vayamos escribiendo la ruta */
+
+.divTextos > .titulosDiv {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px black ;
+}
+
+.divDisplay {
+    background-color: aquamarine;
+    /*a  traves de un atributo llamado border, puedo remarcar el borde de un contenedor*/
+    border: 3px solid red;
+    /*border radius: me permite manejar las esquinas! dandoles un borde redondeado*/
+}
+
+#divN1{
+    height: 10vh;
+    border: 1px solid black;
+    border-radius: 0px 50px 0px 50px;
+    /* border tambien pueden ser individuales! o sea, seleccionar QUE BORDE AFECTAR*/
+}
+
+/*
+? MARGIN Y PADDING DE ELEMENTOS:
+
+MARGIN, definira DISTANCIAS entre ELEMENTOS (distintos contenedores)
+PADDING, definira DISTANCIAS entre CONTENIDO (lo que se encuentra DENTRO del contenedor)
+
+*/
+
+.divs{
+    border: 1px solid black;
+}
+
+#casaSeba{
+    padding: 5px;
+    margin: 15px;
+    /* se pueden seleccionar SECTORES para la separacion*/
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+
+#casaVecina{
+    display:block;
+    /* pared izquierda 5px. techo 10px. pared derecha 20px. piso 25px*/
+    /* padding-left: 5px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 25px; */
+
+    padding: 10px 20px 25px 5px; /* si uso 2 VALORES para mi atributo, el primero sera ARRIBA Y ABAJO, y el segundo IZQUIERDA Y DERECHA*/
+    margin: 5px 20px 15px 10px;
+}
+
+/* display block - inline - inline-block*/
+
+div > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#displayEjemplo{
+    border: 1px solid black;
+    /* block: ocupa TODO EL ANCHO del CONTENEDOR*/
+    display: inline-block; 
+}
+#displayEj2{
+    display: inline-block;
+}
