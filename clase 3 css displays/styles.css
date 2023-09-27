@@ -1,0 +1,72 @@
+/*
+displays tipo FLEX.
+Ubicar de manera organizada (tanto en vertical, como horizontal, los elementos dentro de un contenedor)
+*/
+
+.contenido{
+    background-color: bisque;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.divFlex{
+    width: 800px;
+    height: 800px;
+    background-color: turquoise;
+    /*para utilizar un flex, simplemente ponemos el tipo de display como flex*/
+    display: none;
+    /*la propiedad de flex, permite ubicar los items de manera vertical u horizontal*/
+    flex-direction: row;
+    /*wrap nos dice el comportamiento del display en caso que los elementos SUPEREN la medida del contenedor principal*/
+    flex-wrap: wrap;
+    /*justify-content: permite ubicar el contenido dentro de nuestro display: podemos centrar contenido, y ubicarlo en las diferentes partes de nuestro contenedor*/
+    justify-content: space-around;
+    gap:50px ; /* gap nos da el espacio minimo que habra entre contenedores*/
+    align-items: center;
+    align-content: start;
+    
+}
+
+.divFlex2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    width: 65%;
+    background-color: #2f1d58;
+    height: 80vh;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.lista-items{
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style:none ;
+    padding: 0 15px;
+}
+
+.main-header{
+    padding: 0 0;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.title-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 10px;
+}
