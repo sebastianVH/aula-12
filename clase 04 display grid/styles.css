@@ -1,0 +1,84 @@
+/* podemos indicar ELEMENTOS dentro de un CONTENEDOR, usando la cascada*/
+
+.grid > div {
+    background-color: yellow;
+    text-align: center;
+    font-size: 3vw;
+    border: 1px solid black;
+    padding: 10px;
+}
+/*
+ .grid{
+    background-color: aqua;
+    display: grid;
+     tenemos 2 atributos MUY IMPORTANTES para el display
+     grid-template-columns: este nos permite definir el TAMAÑO Y CANTIDAD DE COLUMNAS
+     grid-template-columns: 100px 200px 300px 200px; 
+     grid-template-rows: este nos permite definir el TAMAÑO Y CANTIDAD DE FILAS
+    grid-template-rows: 100px 100px 100px 300px;
+} */
+
+/* herramientas*/
+/*
+.grid {
+    background-color: aqua;
+    display: grid;
+    un operador matematico: repeat: 
+    1: ¿cuantas veces repetimos?
+    2: ¿que repetimos?
+    
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(3,200px);
+}*/
+
+
+.grid {
+    background-color: aqua;
+    display: grid;
+    /* unidad de medida FR: indicar cuantas UNIDADES del espacio TOTAL del contenedor, ocupara para llenar el espacio vacio*/
+    grid-template-columns: repeat(3,1fr) ;
+}
+
+.gridWeb{
+    display: grid;
+    background-color: aqua;
+    height: 70vh;
+    margin-top: 5px;
+    /* uso del grid-template-areas: dentro del template area, escribiremos entre comillas, QUE ELEMENTO nos gustaria que ocupe CADA POSICION dentro del area del grid!
+    -cada vez que escribamos dentro de las comillas, haremos referencia a UNA FILA
+    -cada vez que separemos UNA PALABRA, haremos referencia a UNA COLUMNA */
+    grid-template-areas: 
+    "nav header header"
+    "main main aside"
+    "footer footer aside";
+    grid-template-columns: 15% 1fr 25%;
+    grid-template-rows: 30% 1fr 10%;
+    gap: 1%;
+}
+
+.gridWeb > * {
+    background-color: rgb(0, 255, 81);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+}
+
+.header{
+    grid-area: header;
+}
+
+.navbar{
+    grid-area: nav;
+}
+
+.main{
+    grid-area: main;
+}
+
+.aside{
+    grid-area: aside;
+}
+
+.footer{
+    grid-area: footer;
+}
